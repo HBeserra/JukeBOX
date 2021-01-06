@@ -17,6 +17,7 @@
 *.xcodeproj
 /.idea/
 /dist/
+/electron/dist/
 /external_binaries/
 /out/
 /vendor/.gclient
