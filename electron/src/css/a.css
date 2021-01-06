@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+:root {
+    --bg-color: #121212;
+    --spotify: #1DB954;
+    --text-1: #fff;
+}
+
+
+.text-overflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 500px;
+}
+
+@media (orientation: landscape) {
+    #left {
+        width: 100%;
+        height: 100vh;
+    }
+}
+
+@media (orientation: portrait) {
+    #left {
+        width: 100vw;
+        height: 100vw;
+    }
+}
+
+@media (orientation: portrait) {
+    #right {
+        height: 60vh;
+    }
+}
+
+@media (orientation: landscape) {
+    #right {
+        width: calc(100vw - 100vh);
+    }
+}
+
+@media (orientation: portrait) {
+    #box {
+        display: initial;
+    }
+}
+
+@media (orientation: landscape) {
+    #box {
+        display: flex;
+    }
+}
+
+* {
+    font-family: 'Fira Sans', sans-serif;
+    margin: 0;
+}
+
+#left, #right {
+    transition: width 3s, font-size 2s;
+    transition: opacity 1s;
+}
+
+body {
+    background-color: var(--bg-color);
+    overflow: hidden;
+}
+
+#log {
+    width: 100vw;
+    height: 100vh;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#log div {
+    display: flex;
+    align-items: center;
+    
+    flex-direction: column;
+    justify-content: center;
+}
+
+#log div #login {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.123);
+    border-radius: 30px;
+    padding: 0 30px;
+}
+
+#login img {
+    max-height: 5vh;
+    max-width: 30vw;
+    margin-bottom: 15px;
+}
+
+#login h3 {
+    color: var(--text-1);
+    margin-bottom: 5px;
+    font-size: 14px;
+    text-transform: uppercase;
+    max-width: 25vw;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+#login span{
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+}
+#login i {
+    margin: 30px;
+    color: rgba(255, 255, 255, 0.288);
+    font-size: 1.7em;
+    text-transform: uppercase;
+}
+
+
+#login a {
+    min-width: 200px;
+    width: auto;
+    padding: 20px 30px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 30px;
+    text-align: center;
+    border-radius: 31px;
+    text-transform: uppercase;
+    background-color: var(--spotify);
+    text-decoration: none;
+    margin: 30px;
+    padding: 16px 14px 18px 14px;
+}
+
+#login a:hover {
+    text-decoration: none;
+    background-color: rgba(29, 185, 84, 0.336);
+}
+
+#box {  
+    background-color: var(--bg-color);
+    max-height: 100%;
+    display: flex;
+}
+
+#right {
+    height: 100vh;
+}
+
+#right div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    font-family: 'Fira Sans', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#right div h1 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+#right div p {
+    font-size: 27px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+#right div i {
+    font-size: 2em;
+}
+
+#right div div #time {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+#right div div .time_bar {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#time_bar {
+    transition: width 100ms;
+    height: 4px;
+    width: 0;
+    border-radius: 2px;
+}
+
+
+#messageScreen {
+    display: none; 
+    width: 100%;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#messageScreen div {
+    display: flex;
+    align-items: center;
+    height: 99vh;
+    flex-direction: column;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 10vw;
+}
+
+#messageScreen div h4,#messageScreen div i {
+    font-size: 96px;
+}
+
+
+#messageScreen div h2 {
+    font-size: 32px;
+}
+
+
+#episode {
+    width: 100%;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    opacity: 0.5;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 96px;
+}
+
+@media (orientation: portrait) {
+    #box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100vh;
+    }
+    #left {
+        background-position: center top;
+        height: 100vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #left div {
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100vw;
+        background-position: center center;
+    }
+    #right {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    #right div h1 {
+        font-size: 3vh;
+    }
+    #right div p {
+        font-size: 2vh;
+    }
+    #right div i {
+        font-size: 2vh;
+    }
+}
+
+@media (orientation: landscape) {
+    #left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #left div {
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100vh;
+        height: 100%;
+        background-position: left center;
+    }
+    #right {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    @media screen and (min-width: 1000px) {
+        #left div {
+            max-width: 600px;
+        }
+    }
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+textarea:focus, input:focus {
+    outline: none;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    #right h1, #right p, #right i{
+        font-size: 30vh;
+
+    }
+    body{
+        background-color: var(--spotify);
+    }
+}

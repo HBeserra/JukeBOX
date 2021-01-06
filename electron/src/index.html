@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Juke Box by Test Lab</title>
+  <link rel="apple-touch-icon" sizes="57x57" href="img/icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="img/icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon-16x16.png">
+  <meta name="msapplication-TileColor" content="#191414">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#191414">
+  <link rel="manifest" href="/manifest.json">
+  
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,700,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/a.css">
+</head>
+
+<body>
+  <div id="log" style="display: none;">
+    <div>
+      <div id="login">
+        <i class="fas fa-lock"></i>
+        <img src="img\icons\juke.png">
+        <h3>necessário conta <span>premium</span> no Spotify</h3>
+        <a href="/login">Login pelo Spotify</a>
+      </div>
+    </div>
+  </div>
+  <div id="box" style="display: none;">
+    <div id="left">
+      <div>
+      </div>
+    </div>
+    <div id="right">
+      <div>
+        <h1 id="music"></h1>
+        <p id="artists"></p>
+        <i id="like" class="fa-heart far" aria-hidden="true"></i>
+        <div>
+          <div id="time">
+            <p id="progress_ms"></p>
+            <p id="duration_ms"></p>
+          </div>
+          <div class="time_bar">
+            <div id="time_bar"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="messageScreen" style="display: none;">
+    <div>
+      
+    </div>
+  </div>
+
+
+
+  <script src="js/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
+  <script src="js/vibrant.min.js"></script>
+  <script src="js/Spotify_Player.js"></script>
+  <script src="js/all.min.js"></script>
+</body>
+
+</html>

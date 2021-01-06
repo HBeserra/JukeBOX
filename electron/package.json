@@ -1,0 +1,24 @@
+{
+  "name": "juke-box",
+  "version": "1.0.0",
+  "description": "juke-box",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HBeserra/juke-box-electron.git"
+  },
+  "author": "HBeserra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HBeserra/juke-box-electron/issues"
+  },
+  "homepage": "https://github.com/HBeserra/juke-box-electron#readme",
+  "devDependencies": {
+    "electron": "^11.1.1"
+  },
+  "dependencies": {}
+}

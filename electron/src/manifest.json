@@ -1,0 +1,17 @@
+{
+    "name": "JukeBox by TestLab BR",
+    "short_name": "Juke",
+    "theme_color": "#191414",
+    "background_color": "#191414",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "http://juke.testlabr.com/",
+    "lang": "pt-BR",
+    "icons": [
+        {
+            "src": "/assets/img/icons/ms-icon-310x310.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
