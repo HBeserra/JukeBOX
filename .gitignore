@@ -15,6 +15,7 @@
 *.vcxproj.filters
 *.vcxproj.user
 *.xcodeproj
+*.code-workspace
 /.idea/
 /dist/
 /electron/dist/
