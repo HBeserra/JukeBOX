@@ -13,6 +13,7 @@ var STATUS = {
   },
   changeState: {
     playing: playerScreen,
+    loading: ()=>{mensageScreen("Iniciando","Aguarde um momento","fas fa-power-off")},
     stop: ()=>{mensageScreen("Nenhuma musica","toque uma musica pelo Spotify","fas fa-music")},
     noUser: ()=>{mensageScreen("Da um play","toque uma musica pelo Spotify","fab fa-spotify")},
     noConnection: ()=>{mensageScreen("Erro","Verifique a conexão","fab fa-exclamation-circle")},
@@ -99,7 +100,7 @@ function updatePlayer(response) {
 
     STATUS.track.id = response.item.id
 
-    STATUS.track.timestamp = response.timestamp
+    STATUS.track.timestamp = response.timestamp || 1
     STATUS.track.isPlying = response.is_playing
     STATUS.track.startPoint = response.progress_ms
     STATUS.track.duration = response.item.duration_ms
@@ -342,7 +343,7 @@ function mensageScreen(title,text,icon,error) {
 
 
 function connect(){
-
+  if(!STATUS.timestamp)STATUS.changeState.loading()
   let socket = new WebSocket(`ws://${BaseURL}/events`);
   
   socket.onopen = function (e) {
@@ -378,8 +379,10 @@ function connect(){
       // event.code is usually 1006 in this case
       console.log('[close] Connection died');
     }
-    STATUS.changeState.error("Perda de conexão com o backend")
+    if(!STATUS.timestamp)STATUS.changeState.loading()
+    else STATUS.changeState.error("Perda de conexão com o backend")
     setTimeout(function() {connect();}, 1000);
+    
 
   };
   

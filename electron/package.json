@@ -5,20 +5,33 @@
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "electron ."
+    "start": "electron .",
+    "dist": "electron-builder"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/HBeserra/juke-box-electron.git"
   },
   "author": "HBeserra",
+  "email" : "hb@testlabr.com",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/HBeserra/juke-box-electron/issues"
   },
   "homepage": "https://github.com/HBeserra/juke-box-electron#readme",
   "devDependencies": {
-    "electron": "^11.1.1"
+    "electron": "^11.1.1",
+    "electron-builder": "^22.9.1"
+  },
+  "build": {
+    "appId": "com.testlabr.jukebox",
+    "productName": "JukeBOX",
+    "linux": {
+      "target": "appImage"
+    },
+    "deb": {},
+    "artifactName": "JukeBOX_${version}_Setup.${ext}",
+    "forceCodeSigning": false
   },
   "dependencies": {}
 }
