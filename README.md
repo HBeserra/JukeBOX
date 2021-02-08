@@ -15,7 +15,26 @@ You'll need a Spotify **Premium** account in order to use Connect.
 
 ## Troubleshooting
 
-#### No Sound
+#### No Sound output
+Have you tried turning the volume up using the command `alsamixer`?
+#### My Raspberry Pi does not use my USB sound card!
+Check with  `aplay -l`  as which card your USB device is listed. Let's say it is "card 1", so try to replace the following in the file  `/usr/share/alsa/alsa.conf`:
+
+```
+defaults.ctl.card 0
+defaults.pcm.card 0
+
+```
+
+with
+
+```
+defaults.ctl.card 1
+defaults.pcm.card 1
+```
+
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxODk0Njg1OCwtNDg4NzcyOTQ2XX0=
+eyJoaXN0b3J5IjpbLTgwNDA2Mzk0NCwtNDg4NzcyOTQ2XX0=
 -->
