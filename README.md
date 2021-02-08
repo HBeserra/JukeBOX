@@ -40,11 +40,11 @@ In the `/opt/JukeBOX/config.toml`  you can set the mixer name with will be used
 mixerSearchKeywords = ""
 ```
 
-
+Thanks to the developers of the [Librespot-java](https://github.com/librespot-org/librespot-java) and [spocon](https://github.com/spocon/spocon)  
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg3MTQwODE1OSwxOTg4NDc2ODI3LC00OD
-g3NzI5NDZdfQ==
+eyJoaXN0b3J5IjpbLTEzNjkyNjg2ODUsLTg3MTQwODE1OSwxOT
+g4NDc2ODI3LC00ODg3NzI5NDZdfQ==
 -->
