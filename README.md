@@ -37,7 +37,7 @@ defaults.pcm.card 1
 In the `/opt/JukeBOX/config.toml`  you can set the mixer name with will be used
 
 ```
-mixerSearchKeywords = "" # Mixer/backend search keywords (semicolon separated)
+mixerSearchKeywords = ""
 ```
 
 
@@ -45,5 +45,6 @@ mixerSearchKeywords = "" # Mixer/backend search keywords (semicolon separated)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk4ODQ3NjgyNywtNDg4NzcyOTQ2XX0=
+eyJoaXN0b3J5IjpbOTQ0NzI0MTA1LDE5ODg0NzY4MjcsLTQ4OD
+c3Mjk0Nl19
 -->
