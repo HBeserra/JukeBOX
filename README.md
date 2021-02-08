@@ -10,7 +10,7 @@ You'll need a Spotify **Premium** account in order to use Connect.
 
 ## Configuration
 
-`JukeBOX` should't need no configuration to work, but the con 
+`JukeBOX` should't need no configuration to work, but the configuration file of librespot-java is in `/opt/JukeBOX/config.toml` more details can be seen in the librespot-java r
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MzYxMTMzOSwtNDg4NzcyOTQ2XX0=
+eyJoaXN0b3J5IjpbNzkyMDI3MjUwLC00ODg3NzI5NDZdfQ==
 -->
