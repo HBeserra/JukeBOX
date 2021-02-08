@@ -1,6 +1,6 @@
 ![JukeBOX logo](https://raw.githubusercontent.com/HBeserra/JukeBOX/main/juke.png)
-
-O **JukeBOX**  é um 
+## Introduction
+The **JukeBOX**  is a  debian 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MzU0MjgzNjddfQ==
+eyJoaXN0b3J5IjpbLTExOTA4NzUxMDRdfQ==
 -->
