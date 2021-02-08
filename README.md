@@ -10,6 +10,7 @@ You'll need a Spotify **Premium** account in order to use Connect.
 
 ## Configuration
 
+`JukeBOX` should't need no configuration to work, but the con 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjg4MDY2OTQ4LC00ODg3NzI5NDZdfQ==
+eyJoaXN0b3J5IjpbLTE5MzYxMTMzOSwtNDg4NzcyOTQ2XX0=
 -->
