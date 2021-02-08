@@ -1,6 +1,6 @@
 ![JukeBOX logo](https://raw.githubusercontent.com/HBeserra/JukeBOX/main/juke.png)
 ## Introduction
-The **JukeBOX**  is a  [Spotify Connect](https://www.spotify.com/connect/) player GUI besed on the  [Librespot-java](https://github.com/librespot-org/librespot-java) backend in arm64 for Debian package.
+The **JukeBOX**  is a  [Spotify Connect](https://www.spotify.com/connect/) player GUI based on the  [Librespot-java](https://github.com/librespot-org/librespot-java) backend in arm64 for Debian package.
 
 The package is pre-configured for work in the `Raspberry Pi` and others dev boards like the `Pine 64`.
 
@@ -10,7 +10,7 @@ You'll need a Spotify **Premium** account in order to use Connect.
 
 ## Configuration
 
-`JukeBOX` should't need no configuration to work, but the configuration file of librespot-java is in `/opt/JukeBOX/config.toml` more details can be seen in the [librespot-java readme](https://github.com/librespot-org/librespot-java).
+`JukeBOX` shouldn't need no configuration to work, but the configuration file of librespot-java is in `/opt/JukeBOX/config.toml` more details can be seen in the [librespot-java readme](https://github.com/librespot-org/librespot-java).
 
 
 ## Troubleshooting
@@ -45,6 +45,6 @@ mixerSearchKeywords = ""
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTQ0NzI0MTA1LDE5ODg0NzY4MjcsLTQ4OD
-c3Mjk0Nl19
+eyJoaXN0b3J5IjpbMTkzMzY1ODQ2NSwxOTg4NDc2ODI3LC00OD
+g3NzI5NDZdfQ==
 -->
