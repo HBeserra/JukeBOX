@@ -33,7 +33,7 @@ defaults.ctl.card 1
 defaults.pcm.card 1
 ```
 
-#### Seting a default output mixer on librespot
+#### Setting a default output mixer on Librespot
 In the `/opt/JukeBOX/config.toml`  you can set the mixer name with will be used
 
 ```
@@ -45,6 +45,6 @@ mixerSearchKeywords = ""
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA2OTIzMjU0NSwxOTg4NDc2ODI3LC00OD
+eyJoaXN0b3J5IjpbLTg3MTQwODE1OSwxOTg4NDc2ODI3LC00OD
 g3NzI5NDZdfQ==
 -->
