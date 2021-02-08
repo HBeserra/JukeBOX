@@ -31,7 +31,7 @@ app.on('activate', () => {
   }
 })
 // sudo /usr/bin/java -jar /opt/spocon/librespot-java-api-v1.5.3.jar
-const ls = spawn('/usr/bin/java', ['-jar', '/opt/spocon/librespot-java-api-v1.5.3.jar'],{cwd: "/opt/spocon"});
+const ls = spawn('/usr/bin/java', ['-jar', '/opt/JukeBOX/librespot-java-api-v1.5.3.jar']);
 
 ls.stdout.on('data', (data) => {
   console.log(`stdout: ${data}`);

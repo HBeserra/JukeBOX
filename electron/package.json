@@ -1,37 +1,76 @@
 {
   "name": "juke-box",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "juke-box",
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron .",
-    "dist": "electron-builder"
+    "dist": "electron-builder",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/HBeserra/juke-box-electron.git"
   },
-  "author": "HBeserra",
-  "email" : "hb@testlabr.com",
+  "author": {
+    "name": "Herbert F. Beserra",
+    "email": "hb@testlabr.com",
+    "url": "https://testlabr.com/"
+  },
+  "email": "hb@testlabr.com",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/HBeserra/juke-box-electron/issues"
   },
   "homepage": "https://github.com/HBeserra/juke-box-electron#readme",
   "devDependencies": {
-    "electron": "^11.1.1",
+    "electron": "^11.2.3",
     "electron-builder": "^22.9.1"
   },
   "build": {
     "appId": "com.testlabr.jukebox",
+    "files": [
+      "**/*",
+      "!**/node_modules/*/{CHANGELOG.md,README.md,README,readme.md,readme}",
+      "!**/node_modules/*/{test,__tests__,tests,powered-test,example,examples}",
+      "!**/node_modules/*.d.ts",
+      "!**/node_modules/.bin",
+      "!**/*.{iml,o,hprof,orig,pyc,pyo,rbc,swp,csproj,sln,xproj}",
+      "!.editorconfig",
+      "!**/._*",
+      "!**/{.DS_Store,.git,.hg,.svn,CVS,RCS,SCCS,.gitignore,.gitattributes}",
+      "!**/{__pycache__,thumbs.db,.flowconfig,.idea,.vs,.nyc_output}",
+      "!**/{appveyor.yml,.travis.yml,circle.yml}",
+      "!**/{npm-debug.log,yarn.lock,.yarn-integrity,.yarn-metadata.json}"
+    ],
+    "extraFiles": [
+      {
+        "from": "../librespot-java/",
+        "filter": [
+          "**/*.jar",
+          "**/*.toml"
+        ]
+      }
+    ],
     "productName": "JukeBOX",
     "linux": {
-      "target": "appImage"
+      "target": [
+        {
+          "target": "deb",
+          "arch": [
+            "arm64"
+          ]
+        }
+      ],
+      "icon": "../app-icons"
     },
     "deb": {},
-    "artifactName": "JukeBOX_${version}_Setup.${ext}",
+    "artifactName": "JukeBOX_${version}_${arch}_Setup.${ext}",
     "forceCodeSigning": false
   },
-  "dependencies": {}
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0"
+  }
 }
