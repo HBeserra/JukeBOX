@@ -33,8 +33,10 @@ defaults.ctl.card 1
 defaults.pcm.card 1
 ```
 
+#### Seting a default output card on librespot
+
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwNDA2Mzk0NCwtNDg4NzcyOTQ2XX0=
+eyJoaXN0b3J5IjpbNTcwOTU2NDYwLC00ODg3NzI5NDZdfQ==
 -->
