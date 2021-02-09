@@ -2,7 +2,7 @@ deviceId = "" ### Device ID (40 chars, leave empty for random)  ###
 deviceName = "JukeBOX" ### Device name ###
 deviceType = "SPEAKER" ### Device type (COMPUTER, TABLET, SMARTPHONE, SPEAKER, TV, AVR, STB, AUDIO_DONGLE, GAME_CONSOLE, CAST_VIDEO, CAST_AUDIO, AUTOMOBILE, WEARABLE, UNKNOWN_SPOTIFY, CAR_THING, UNKNOWN) ###
 preferredLocale = "en" ### Preferred locale ###
-logLevel = "TRACE" ### Log level (OFF, FATAL, ERROR, WARN, INFO, DEBUG, TRACE, ALL) ###
+logLevel = "ERROR" ### Log level (OFF, FATAL, ERROR, WARN, INFO, DEBUG, TRACE, ALL) ###
 
 [auth] ### Authentication ###
 strategy = "ZEROCONF" # Strategy (USER_PASS, ZEROCONF, BLOB, FACEBOOK, STORED)
@@ -18,7 +18,7 @@ listenAll = true # Listen on all interfaces (overrides `zeroconf.interfaces`)
 interfaces = "" # Listen on these interfaces (comma separated list of names)
 
 [cache] ### Cache ###
-enabled = true # Cache enabled
+enabled = false # Cache enabled
 dir = "./cache/"
 doCleanUp = true
 
@@ -34,8 +34,8 @@ autoplayEnabled = true # Autoplay similar songs when your music ends
 preferredAudioQuality = "NORMAL" # Preferred audio quality (NORMAL, HIGH, VERY_HIGH)
 enableNormalisation = true # Whether to apply the Spotify loudness normalisation
 normalisationPregain = +3.0 # Normalisation pregain in decibels (loud at +6, normal at +3, quiet at -5)
-initialVolume = 65536 # Initial volume (0-65536)
-volumeSteps = 64 # Number of volume notches
+initialVolume = 15000 # Initial volume (0-65536)
+volumeSteps = 30 # Number of volume notches
 logAvailableMixers = true # Log available mixers
 mixerSearchKeywords = "" # Mixer/backend search keywords (semicolon separated)
 crossfadeDuration = 0 # Crossfade overlap time (in milliseconds)

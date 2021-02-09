@@ -19,7 +19,7 @@ function createWindow () {
 app.whenReady().then(createWindow)
 
 app.on('window-all-closed', () => {
-  ls.kill()
+  backend_process.kill()
   if (process.platform !== 'darwin') {
     app.quit()
   }
@@ -31,16 +31,16 @@ app.on('activate', () => {
   }
 })
 // sudo /usr/bin/java -jar /opt/spocon/librespot-java-api-v1.5.3.jar
-const ls = spawn('/usr/bin/java', ['-jar', '/opt/JukeBOX/librespot-java-api-v1.5.3.jar']);
+const backend_process = spawn('/usr/bin/java', ['-jar', '/opt/JukeBOX/librespot-java-api-v1.5.3.jar'],{cwd: "/opt/JukeBOX"});
 
-ls.stdout.on('data', (data) => {
+backend_process.stdout.on('data', (data) => {
   console.log(`stdout: ${data}`);
 });
 
-ls.stderr.on('data', (data) => {
+backend_process.stderr.on('data', (data) => {
   console.error(`stderr: ${data}`);
 });
 
-ls.on('close', (code) => {
+backend_process.on('close', (code) => {
   console.log(`child process exited with code ${code}`);
 });

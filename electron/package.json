@@ -60,13 +60,16 @@
         {
           "target": "deb",
           "arch": [
-            "arm64"
+            "arm64",
+            "x64"
           ]
         }
       ],
       "icon": "../app-icons"
     },
-    "deb": {},
+    "deb": {
+      "depends": ["gconf2", "gconf-service", "libnotify4", "libappindicator1", "libxtst6", "libnss3", "default-jre | java6-runtime"]
+    },
     "artifactName": "JukeBOX_${version}_${arch}_Setup.${ext}",
     "forceCodeSigning": false
   },
